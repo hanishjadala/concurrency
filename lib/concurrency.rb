@@ -54,7 +54,6 @@ module Concurrency
     end
     
     def self.get_rate(from, to)
-        puts "From:#{from}>>TO:#{to}>>APIKEY:#{Concurrency.configuration.api_key}"
         if Concurrency.configuration.api_key.nil? 
             raise "API Key is missing. Kindly set API key CONCURRENCY_APIKEY."
         end
